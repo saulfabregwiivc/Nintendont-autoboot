@@ -569,6 +569,7 @@ int main(int argc, char **argv)
 
 	memset((void*)ncfg, 0, sizeof(NIN_CFG));
 	bool argsboot = false;
+	bool base64args = false;
 	if(argc > 1) //every 0x00 gets counted as one arg so just make sure its more than the path and copy
 	{
 		if (strncmp("AQcM", argv[1], 4) == 0) {
